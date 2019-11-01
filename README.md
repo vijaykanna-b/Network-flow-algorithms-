@@ -6,9 +6,14 @@ STATEMENT : Given a graph which represents a flow network where every edge has a
 
 PROBLEM EXPLANATION: An augmenting path is a simple path from source to sink which do not include any cycles and that pass only through positive weighted edges. A residual network graph indicates how much more flow is allowed in each edge in the network graph. If there are no augmenting paths possible from S to T, then the flow is maximum. The result i.e. the maximum flow will be the total flow out of source node which is also equal to total flow in to the sink node.
 
+ALGORITHM 1:
+
+Start with initial flow as 0
+While there is an augmented path from source to sink add the path flow to flow.
+Return flow.
 
 
-ALGORITHM: 
+ALGORITHM 2: 
     
     Ford Fulkerson(Graph G, Node S, Node T):
     
